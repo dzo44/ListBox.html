@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ListBox</title>
+</head>
+<body>
+    <form action="">
+        <select name="Select1" id="Select1" size="4">
+            <option value="1">Opcija1</option>
+            <option value="2">Opcija2</option>
+            <option value="3" selected>Opcija3</option>
+            <option value="4">Opcija4</option>
+            <option value="5">Opcija5</option>
+        </select>
+        <br>
+        <input type="button" value="Prikazi" onclick="Prikazi()">
+    </form>
+    <br>
+    <span id="Span1"></span>
+
+    <script>
+        function Prikazi() {
+            var select1 = document.getElementById("Select1");
+            var span1 = document.getElementById("Span1");
+
+            span1.innerHTML = select1.value;
+
+
+        }
+    </script>
+</body>
+</html>
