@@ -27,8 +27,14 @@
             var span1 = document.getElementById("Span1");
 
             span1.innerHTML = select1.value;
+        }
+        
+        function Resetuj() {
+            var select1 = document.getElementById("Select1");
+            var span1 = document.getElementById("Span1");
 
-
+            select1.slectedIndex = -1;
+            span1.innerHTML = "";
         }
     </script>
 </body>
